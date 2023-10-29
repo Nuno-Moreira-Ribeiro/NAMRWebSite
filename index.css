@@ -1,0 +1,98 @@
+.presentation {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+}
+
+.presentation p {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+.imgText {
+    display: flex;
+    height: 51vh;
+    flex-direction: row;
+    align-items: self-start;
+}
+
+img {
+    height: 51vh;
+}
+
+.Description h1 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.Description {
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Description p {
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 1em;
+}
+
+.TextImg {
+    display: flex;
+    height: 51vh;
+    flex-direction: row-reverse;
+    align-items: self-start;
+}
+
+
+.buttonProject {
+    border-radius: 8px;
+    height: 3vh;
+    width: 20vw;
+    justify-content: center;
+    border: none;
+    background: rgb(223, 223, 0);
+    color: #333;
+    padding: 5%;
+    box-shadow: 0 0.7065919983928324px 0.7065919983928324px -0.625px #00000026,
+        0 1.8065619053231785px 1.8065619053231785px -1.25px #00000025,
+        0 3.6217592146567767px 3.6217592146567767px -1.875px #00000023,
+        0 6.8655999097303715px 6.8655999097303715px -2.5px #00000020,
+        0 13.646761411524492px 13.646761411524492px -3.125px #0000001b,
+        0 30px 30px -3.75px #0000000d;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 150ms ease-in-out;
+}
+
+.buttonProject:active {
+    scale: 0.95;
+    background: #333;
+    color: rgb(223, 223, 0);
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 0.637473px 1.14745px -1.125px,
+        rgba(0, 0, 0, 0.24) 0px 1.93094px 3.4757px -2.25px,
+        rgba(0, 0, 0, 0.192) 0px 5.10423px 9.18761px -3.375px,
+        rgba(0, 0, 0, 0.03) 0px 16px 28.8px -4.5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.TextImg .IMG {
+    margin-right: 2%;
+}
+
+.imgText .IMG {
+    margin-left: 2%;
+}

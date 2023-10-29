@@ -1,0 +1,120 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+    font-family: "Rubik";
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    width: 60%;
+}
+
+.button {
+    transition-duration: 0.3s;
+    border: none;
+    text-align: center;
+    width: fit-content;
+    font-size: 1.5rem;
+    height: auto;
+    padding: 2%;
+    position: relative;
+    font-weight: bold;
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(223, 223, 0);
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.button:hover::after {
+    width: 100%;
+    transition-duration: 0.5s;
+}
+
+header {
+    background-color: rgb(223, 223, 0);
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+
+}
+
+#email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 770px) {
+    header {
+        justify-content: center;
+    }
+
+    .contact {
+        width: 100vw;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact {
+        width: 100vw;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header {
+        height: 10vh;
+    }
+
+    #tel {
+        margin: 0;
+    }
+
+    #email {
+        height: 4vh;
+    }
+
+    .center {
+        width: 80%;
+    }
+}
