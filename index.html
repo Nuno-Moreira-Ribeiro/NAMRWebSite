@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/89356d230c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
-    <script src="scripte.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="arrowUp.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("img").attr("draggable", "false");
+        });
+    </script>
     <title>NAMR Maçonnerie - Accueil</title>
 </head>
 <header>
@@ -26,13 +33,14 @@
     <div class="left"></div>
     <div class="center">
         <a class="button" href="index.html">Accueil</a>
-        <a class="button" href="index.html">Nos réalisations</a>
+        <a class="button" href="realisation.html">Nos réalisations</a>
         <a class="button" href="contact.html">Contact</a>
     </div>
     <div class="right"></div>
 </nav>
 
 <body>
+    <button id="scrollToTopButton" class="fa-solid fa-up-long"></button>
 
     <div class="presentation">
         <p>Bienvenue chez NAMR, votre partenaire de confiance pour tous vos projets de maçonnerie.
@@ -42,7 +50,6 @@
             de maçonnerie exceptionnels
         </p>
     </div>
-
     <div class="imgText">
         <div class="IMG"><img src="IMG/murPierre1.jpg" alt="Mur en pierre"></div>
         <div class="Description">
@@ -59,7 +66,7 @@
                     pour donner vie à vos projets.</p>
             </div>
             <div>
-                <a class="buttonProject" href="contact.html">Voir les réalisations</a>
+                <a class="buttonProject" href="realisation.html#MursPierre">Voir les réalisations</a>
             </div>
         </div>
     </div>
@@ -83,7 +90,7 @@
                     pour les dalles en marbre, en granit, en ardoise, ou tout autre type de pierre naturelle.</p>
             </div>
             <div>
-                <a class="buttonProject" href="contact.html">Voir les réalisations</a>
+                <a class="buttonProject" href="realisation.html#DallesPierre">Voir les réalisations</a>
             </div>
         </div>
     </div>
@@ -107,7 +114,7 @@
                     pour devenir la fondation solide sur laquelle reposent vos projets.</p>
             </div>
             <div>
-                <a class="buttonProject" href="contact.html">Voir les réalisations</a>
+                <a class="buttonProject" href="realisation.html#DallesBeton">Voir les réalisations</a>
             </div>
         </div>
     </div>
@@ -137,7 +144,7 @@
                     renforcement, assurant ainsi la sécurité et la stabilité de votre structure.</p>
             </div>
             <div>
-                <a class="buttonProject" href="contact.html">Voir les réalisations</a>
+                <a class="buttonProject" href="realisation.html#OuvertureMurPorteur">Voir les réalisations</a>
             </div>
         </div>
     </div>
@@ -165,7 +172,7 @@
                     l'extérieur.</p>
             </div>
             <div>
-                <a class="buttonProject" href="contact.html">Voir les réalisations</a>
+                <a class="buttonProject" href="realisation.html#PoseParpaing">Voir les réalisations</a>
             </div>
         </div>
     </div>
@@ -187,7 +194,7 @@
                     vos murs, mais également les protègera de l'usure, de l'humidité.</p>
             </div>
             <div>
-                <a class="buttonProject" href="contact.html">Voir les réalisations</a>
+                <a class="buttonProject" href="realisation.html#JointsCreprissage">Voir les réalisations</a>
             </div>
         </div>
     </div>

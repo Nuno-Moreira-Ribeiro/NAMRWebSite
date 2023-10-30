@@ -83,16 +83,30 @@ img {
         rgba(0, 0, 0, 0.03) 0px 16px 28.8px -4.5px;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1%;
-}
-
 .TextImg .IMG {
     margin-right: 2%;
 }
 
 .imgText .IMG {
     margin-left: 2%;
+}
+
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: rgba(223, 223, 0, 0.711);
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 2.5em;
+    height: 2.5em;
+
+}
+
+#scrollToTopButton:hover {
+    background-color: rgba(223, 223, 0);
 }

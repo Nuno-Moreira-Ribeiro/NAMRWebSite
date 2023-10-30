@@ -1,0 +1,57 @@
+.separateur {
+    height: .3em;
+    background-color: black;
+    width: 98vw;
+    border-radius: 20px;
+}
+
+.IMG {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    width: 100vw;
+    padding-left: 1%;
+    flex-wrap: wrap;
+}
+
+.IMG img {
+    margin: 0.5%;
+    height: 40vh;
+}
+
+.type {
+    margin-left: 1%;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: rgba(223, 223, 0, 0.711);
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 2.5em;
+    height: 2.5em;
+
+}
+
+#scrollToTopButton:hover {
+    background-color: rgba(223, 223, 0);
+}
+
+.click-to-zoom {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.click-to-zoom:hover {
+    transform: scale(1.3);
+}
