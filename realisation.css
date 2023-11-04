@@ -55,3 +55,21 @@
 .click-to-zoom:hover {
     transform: scale(1.3);
 }
+
+.IMG img {
+    margin: 0.5%;
+    height: 40vh;
+    transition: filter 0.3s;
+    /* Ajoutez une transition pour une animation en douceur */
+}
+
+.IMG:hover img {
+    filter: blur(5px);
+    /* Applique un flou aux autres images lorsqu'un conteneur IMG est survolé */
+}
+
+.IMG img:hover {
+    filter: blur(0);
+    z-index: 1000;
+    /* Supprime le flou de l'image survolée */
+}
