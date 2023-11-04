@@ -49,27 +49,22 @@
 
 .click-to-zoom {
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-
-.click-to-zoom:hover {
-    transform: scale(1.3);
+    transition: scale 0.3s ease-in-out;
 }
 
 .IMG img {
     margin: 0.5%;
     height: 40vh;
-    transition: filter 0.3s;
-    /* Ajoutez une transition pour une animation en douceur */
+    transition: scale 0.3s ease-in-out;
 }
 
 .IMG:hover img {
-    filter: blur(5px);
-    /* Applique un flou aux autres images lorsqu'un conteneur IMG est survolé */
+    opacity: 0.5;
 }
 
 .IMG img:hover {
-    filter: blur(0);
+    opacity: 1;
     z-index: 1000;
-    /* Supprime le flou de l'image survolée */
+    scale: 1.3;
+    transition: scale 0.3s ease-in-out;
 }
