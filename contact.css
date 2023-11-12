@@ -101,3 +101,47 @@ h1 {
 .required {
     color: red;
 }
+
+@media screen and (max-width: 900px) {
+    .pied-formulaire button {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pied-formulaire button {
+        width: 50vw;
+    }
+
+    body {
+        overflow-y: scroll;
+    }
+
+    .container {
+        height: 85vh;
+        width: 70vw;
+    }
+
+    .gauche .Text input {
+        width: 70vw;
+    }
+
+    .gauche .Text textarea {
+        width: 69vw;
+    }
+
+    .pied-formulaire {
+        width: 70vw;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .pied-formulaire button {
+        width: 60vw;
+    }
+
+    .container {
+        height: 100vh;
+    }
+}

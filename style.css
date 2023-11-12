@@ -35,7 +35,7 @@ nav {
     border: none;
     text-align: center;
     width: fit-content;
-    font-size: 2rem;
+    font-size: 2.5vw;
     height: auto;
     padding: 2%;
     position: relative;
@@ -85,6 +85,7 @@ header {
 
 footer p {
     margin-bottom: 0;
+    text-align: center;
 }
 
 footer {
@@ -123,7 +124,42 @@ footer {
         height: 4vh;
     }
 
+
+}
+
+@media screen and (max-width: 1000px) {
+    .button {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    .button {
+        font-size: 1.4em;
+    }
+
     .center {
-        width: 80%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .button {
+        font-size: 1.3em;
+    }
+
+    footer p {
+        width: 90vw;
+    }
+
+    .contact {
+        width: 95vw;
+    }
+
+    header {
+        width: 100vw;
+        padding: 0;
     }
 }

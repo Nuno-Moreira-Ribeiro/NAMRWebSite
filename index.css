@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     font-size: 1.3em;
+    text-align: justify;
 }
 
 .imgText {
@@ -17,10 +18,11 @@
     height: 51vh;
     flex-direction: row;
     align-items: self-start;
+    margin-bottom: 2%;
 }
 
 img {
-    height: 51vh;
+    width: 40vw;
 }
 
 .Description h1 {
@@ -35,6 +37,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: justify;
 }
 
 .Description p {
@@ -48,12 +51,13 @@ img {
     height: 51vh;
     flex-direction: row-reverse;
     align-items: self-start;
+    margin-bottom: 2%;
 }
 
 
 .buttonProject {
     border-radius: 8px;
-    height: 3vh;
+    height: 4vh;
     width: 20vw;
     justify-content: center;
     border: none;
@@ -70,6 +74,7 @@ img {
     cursor: pointer;
     display: flex;
     align-items: center;
+    text-align: center;
     transition: 150ms ease-in-out;
 }
 
@@ -109,4 +114,75 @@ img {
 
 #scrollToTopButton:hover {
     background-color: rgba(223, 223, 0);
+}
+
+@media screen and (max-width: 1266px) {
+    .Description h1 {
+        display: flex;
+        align-items: center;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .Description {
+        width: 70vw;
+    }
+
+    .imgText,
+    .TextImg {
+        flex-direction: column-reverse;
+        height: auto;
+        align-items: center;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Description h1 {
+        display: flex;
+        align-items: center;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .presentation {
+        font-size: 2vw;
+    }
+
+    .Description p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Description p {
+        font-size: 2.4vw;
+    }
+
+    .Description {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    .Description h1 {
+        font-size: 1.4em;
+
+    }
+
+    .Description p {
+        font-size: 1em;
+    }
+
+    .presentation {
+        font-size: 0.8em;
+    }
+
+    .buttonProject {
+        width: 40vw;
+    }
 }

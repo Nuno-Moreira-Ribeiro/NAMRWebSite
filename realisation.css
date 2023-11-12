@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .separateur {
     height: .3em;
     background-color: black;
@@ -67,4 +71,37 @@
     z-index: 1000;
     scale: 1.3;
     transition: scale 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+
+    .IMG:hover img {
+        opacity: unset;
+    }
+
+    .IMG img:hover {
+        opacity: unset;
+        z-index: unset;
+        scale: unset;
+        transition: none;
+    }
+
+    .IMG {
+        padding: 0%;
+    }
+
+    .type {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .IMG img {
+        height: 70vw;
+    }
+
+    .type {
+        font-size: 1.3rem;
+    }
+
 }
