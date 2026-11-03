@@ -1,147 +1,150 @@
-body {
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 72px;
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+
+.infos h1 {
+    font-size: clamp(38px, 4.5vw, 56px);
+    margin-bottom: 20px;
+}
+
+.infos p {
+    color: var(--ink-soft);
+    margin: 0 0 36px;
+}
+
+.infos dl {
+    margin: 0;
+    border-top: 3px solid var(--ink);
+}
+
+.infos dt {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--muted);
+    padding-top: 18px;
+}
+
+.infos dd {
+    margin: 4px 0 0;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--line);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.infos dd a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--yellow);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+
+/* Formulaire */
+.formulaire {
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-self: start;
+}
+
+.champs-ligne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.formulaire label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formulaire label span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formulaire em {
+    font-style: normal;
+    color: #b3261e;
+}
+
+.formulaire input,
+.formulaire textarea {
+    width: 100%;
+    font: inherit;
+    font-size: 16px;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-bottom: 2px solid var(--ink-soft);
+    border-radius: 0;
+    padding: 12px 14px;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.formulaire textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.formulaire input::placeholder,
+.formulaire textarea::placeholder {
+    color: #a39d90;
+}
+
+.formulaire input:focus,
+.formulaire textarea:focus {
+    outline: none;
+    background: #fff;
+    border-bottom-color: var(--yellow);
+    box-shadow: 0 2px 0 0 var(--yellow);
+}
+
+.form-pied {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 60vw;
-    height: 70vh;
-    background-color: rgb(225, 225, 225);
-    border: 3px solid rgb(0, 0, 0);
-    border-radius: 1%;
-    padding: 1% 2%;
-    margin-top: 1%;
-}
-
-.corps {
-    width: 100%;
-    display: flex;
     justify-content: space-between;
-    margin-bottom: 1%;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
-.corps .Text {
-    margin-top: 1%;
-    display: flex;
-    flex-direction: column;
-}
-
-.gauche .Text input {
-    margin-top: 1%;
-    padding: 1% 0.5%;
-    border: 1px solid #c9c9c9;
-    outline-color: #14274f;
-    border-radius: 5px;
-    width: 58vw;
-    height: 3vh;
-}
-
-.droite {
-    margin-left: 2%;
-}
-
-.Text textarea {
-    margin-top: 1%;
-    padding: 1%;
-    background-color: #ffffff;
-    border: 2px solid #c9c9c9;
-    outline-color: #14274f;
-    border-radius: 5px;
-    resize: none;
-    height: 5vh;
-    width: 58vw;
-    margin-right: 2%;
-}
-
-.pied-formulaire {
-    width: 60vw;
-    display: flex;
-    justify-content: center;
-}
-
-.pied-formulaire button {
-    margin-top: 1%;
-    background-color: rgb(223, 223, 0);
-    font-size: 1em;
-    border: none;
-    border-radius: 10rem;
-    outline: none;
-    cursor: pointer;
-    transition: 0.5s;
-    width: 20vw;
-    height: 5vh;
-}
-
-.pied-formulaire button:hover {
-    transform: scale(1.05);
-}
-
-#avertissement {
+.form-pied p {
     margin: 0;
-}
-
-h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-#avertissement p {
-    margin: 0;
-}
-
-#explication {
-    margin-top: 1%;
-    margin-bottom: 0;
-}
-
-.required {
-    color: red;
+    font-size: 14px;
+    color: var(--muted);
 }
 
 @media screen and (max-width: 900px) {
-    .pied-formulaire button {
-        width: 30vw;
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-top: 40px;
+        padding-bottom: 64px;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .pied-formulaire button {
-        width: 50vw;
+@media screen and (max-width: 520px) {
+    .formulaire {
+        padding: 24px 18px;
     }
 
-    body {
-        overflow-y: scroll;
+    .champs-ligne {
+        grid-template-columns: 1fr;
     }
 
-    .container {
-        height: 85vh;
-        width: 70vw;
-    }
-
-    .gauche .Text input {
-        width: 70vw;
-    }
-
-    .gauche .Text textarea {
-        width: 69vw;
-    }
-
-    .pied-formulaire {
-        width: 70vw;
-    }
-
-}
-
-@media screen and (max-width: 350px) {
-    .pied-formulaire button {
-        width: 60vw;
-    }
-
-    .container {
-        height: 100vh;
+    .form-pied .btn {
+        width: 100%;
     }
 }

@@ -4,111 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photos des chantiers réalisés par NAMR Maçonnerie.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/89356d230c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="realisation.css">
     <link rel="icon" type="image/icon" href="IMG/icon.ico">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="arrowUp.js"></script>
+    <script src="script.js" defer></script>
     <title>NAMR Maçonnerie - Réalisations</title>
 </head>
-<header>
-    <div class="contact">
-        <a id="tel" href="tel:+33638568154">&#9743 06 38 56 81 54&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-        <div id="email">
-            <p>&#9993&nbsp</p>
-            <a href="mailto:nunoantonio25@hotmail.com">nunoantonio25@hotmail.com</a>
-        </div>
-    </div>
-
-</header>
-<nav>
-    <div class="left"></div>
-    <div class="center">
-        <a class="button" href="index.html">Accueil</a>
-        <a class="button" href="realisation.html">Nos réalisations</a>
-        <a class="button" href="contact.html">Contact</a>
-    </div>
-    <div class="right"></div>
-</nav>
 
 <body>
-    <button id="scrollToTopButton" class="fa-solid fa-up-long"></button>
-    <div class="categorie">
-        <h1 class="type" id="DallesBeton">Dalles en béton armé</h1>
-        <hr class="separateur">
-        <div class="IMG">
-            <img src="IMG/dalle1.jpg" alt="dalle2">
-            <img src="IMG/dalle.jpg" alt="dalle1">
-            <img src="IMG/dalle2.jpg" alt="dalle3">
-            <img src="IMG/dalle3.jpg" alt="dalle4">
-            <img src="IMG/dalle4.jpg" alt="dalle5">
-            <img src="IMG/dalle5.jpg" alt="dalle6">
+    <div class="topbar">
+        <div class="wrap">
+            <a href="tel:+33638568154">&#9743;&nbsp; 06 38 56 81 54</a>
+            <a href="mailto:nunoantonio25@hotmail.com">&#9993;&nbsp; nunoantonio25@hotmail.com</a>
         </div>
     </div>
 
-    <div class="categorie">
-        <h1 class="type" id="MursPierre">Construction/Reconstruction de murs en pierre</h1>
-        <hr class="separateur">
-        <div class="IMG">
-            <img src="IMG/murPierre.jpg" alt="murPierre">
-            <img src="IMG/murPierre1.jpg" alt="murPierre1">
-            <img src="IMG/murPierre2.jpg" alt="murPierre2">
-            <img src="IMG/murPierre3.jpg" alt="murPierre3">
-            <img src="IMG/murPierre4.jpg" alt="murPierre4">
-            <img src="IMG/murPierre5.jpg" alt="murPierre5">
-            <img src="IMG/murPierre6.jpg" alt="murPierre6">
+    <header class="site-header">
+        <div class="wrap">
+            <a class="logo" href="index.html"><strong>NAMR</strong><span>Maçonnerie</span></a>
+            <nav class="site-nav">
+                <a href="index.html">Accueil</a>
+                <a href="realisation.html" aria-current="page">Réalisations</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-        </div>
-    </div>
+    <main>
+        <section class="page-head">
+            <div class="wrap">
+                <span class="eyebrow">Nos chantiers</span>
+                <h1>Réalisations</h1>
+                <p>Quelques photos de nos chantiers, classées par type de travaux. Cliquez sur une photo pour
+                    l'agrandir.</p>
+            </div>
+        </section>
 
-    <div class="categorie">
-        <h1 class="type" id="DallesPierre">Pose de dalles de pierre naturelle</h1>
-        <hr class="separateur">
-        <div class="IMG">
-            <img src="IMG/PoseDePierre.jpg" alt="PoseDePierre">
-            <img src="IMG/solPierre.jpg" alt="PoseDePierre">
-            <img src="IMG/solPierre1.jpg" alt="PoseDePierre">
-            <img src="IMG/dallePierre.jpg" alt="PoseDePierre">
-            <img src="IMG/DallePierre2.jpg" alt="PoseDePierre">
-        </div>
-    </div>
-    <div class="categorie">
-        <h1 class="type" id="OuvertureMurPorteur">Ouverture sur Mur Porteur</h1>
-        <hr class="separateur">
-        <div class="IMG">
-            <img src="IMG/murPorteur.jpg" alt="murPorteur">
-            <img src="IMG/murPorteur2.jpg" alt="murPorteur">
-            <img src="IMG/murPorteur3.jpg" alt="murPorteur">
+        <nav class="filtres" aria-label="Catégories">
+            <div class="wrap">
+                <a href="#DallesBeton">Dalles béton</a>
+                <a href="#MursPierre">Murs en pierre</a>
+                <a href="#DallesPierre">Dalles en pierre</a>
+                <a href="#OuvertureMurPorteur">Murs porteurs</a>
+                <a href="#PoseParpaing">Parpaing</a>
+                <a href="#JointsCreprissage">Joints &amp; crépi</a>
+            </div>
+        </nav>
 
-        </div>
-    </div>
-    <div class="categorie">
-        <h1 class="type" id="PoseParpaing">Pose de Parpaing</h1>
-        <hr class="separateur">
-        <div class="IMG">
-            <img src="IMG/parp.jpg" alt="Parpaing">
-            <img src="IMG/Par.jpg" alt="Parpaing">
-        </div>
-    </div>
-    <div class="categorie">
-        <h1 class="type" id="JointsCreprissage">Joints et Crépissage</h1>
-        <hr class="separateur">
-        <div class="IMG">
-            <img src="IMG/Joint2.jpg" alt="Parpaing">
-            <img src="IMG/Joint.jpg" alt="Parpaing">
-        </div>
-    </div>
+        <div class="wrap">
+            <section class="categorie" id="DallesBeton">
+                <div class="cat-head">
+                    <h2>Dalles en béton armé</h2>
+                    <span>6 photos</span>
+                </div>
+                <div class="galerie">
+                    <img src="IMG/dalle1.jpg" alt="Dalle en béton armé" loading="lazy">
+                    <img src="IMG/dalle.jpg" alt="Dalle en béton armé" loading="lazy">
+                    <img src="IMG/dalle2.jpg" alt="Dalle en béton armé" loading="lazy">
+                    <img src="IMG/dalle3.jpg" alt="Dalle en béton armé" loading="lazy">
+                    <img src="IMG/dalle4.jpg" alt="Dalle en béton armé" loading="lazy">
+                    <img src="IMG/dalle5.jpg" alt="Dalle en béton armé" loading="lazy">
+                </div>
+            </section>
 
-    <footer>
-        <p>Créé par <a class="linkHover" href="https://nuno-moreira-ribeiro.github.io/" target="_blank">Nuno
-                Moreira Ribeiro</a>
-            © Copyright 2023 - Tous droits réservés.
-        </p>
+            <section class="categorie" id="MursPierre">
+                <div class="cat-head">
+                    <h2>Construction et reconstruction de murs en pierre</h2>
+                    <span>7 photos</span>
+                </div>
+                <div class="galerie">
+                    <img src="IMG/murPierre.jpg" alt="Mur en pierre" loading="lazy">
+                    <img src="IMG/murPierre1.jpg" alt="Mur en pierre" loading="lazy">
+                    <img src="IMG/murPierre2.jpg" alt="Mur en pierre" loading="lazy">
+                    <img src="IMG/murPierre3.jpg" alt="Mur en pierre" loading="lazy">
+                    <img src="IMG/murPierre4.jpg" alt="Mur en pierre" loading="lazy">
+                    <img src="IMG/murPierre5.jpg" alt="Mur en pierre" loading="lazy">
+                    <img src="IMG/murPierre6.jpg" alt="Mur en pierre" loading="lazy">
+                </div>
+            </section>
+
+            <section class="categorie" id="DallesPierre">
+                <div class="cat-head">
+                    <h2>Pose de dalles de pierre naturelle</h2>
+                    <span>5 photos</span>
+                </div>
+                <div class="galerie">
+                    <img src="IMG/PoseDePierre.jpg" alt="Dalles de pierre naturelle" loading="lazy">
+                    <img src="IMG/solPierre.jpg" alt="Dalles de pierre naturelle" loading="lazy">
+                    <img src="IMG/solPierre1.jpg" alt="Dalles de pierre naturelle" loading="lazy">
+                    <img src="IMG/dallePierre.jpg" alt="Dalles de pierre naturelle" loading="lazy">
+                    <img src="IMG/DallePierre2.jpg" alt="Dalles de pierre naturelle" loading="lazy">
+                </div>
+            </section>
+
+            <section class="categorie" id="OuvertureMurPorteur">
+                <div class="cat-head">
+                    <h2>Ouverture sur mur porteur</h2>
+                    <span>3 photos</span>
+                </div>
+                <div class="galerie">
+                    <img src="IMG/murPorteur.jpg" alt="Ouverture sur mur porteur" loading="lazy">
+                    <img src="IMG/murPorteur2.jpg" alt="Ouverture sur mur porteur" loading="lazy">
+                    <img src="IMG/murPorteur3.jpg" alt="Ouverture sur mur porteur" loading="lazy">
+                </div>
+            </section>
+
+            <section class="categorie" id="PoseParpaing">
+                <div class="cat-head">
+                    <h2>Pose de parpaing</h2>
+                    <span>2 photos</span>
+                </div>
+                <div class="galerie">
+                    <img src="IMG/parp.jpg" alt="Pose de parpaing" loading="lazy">
+                    <img src="IMG/Par.jpg" alt="Pose de parpaing" loading="lazy">
+                </div>
+            </section>
+
+            <section class="categorie" id="JointsCreprissage">
+                <div class="cat-head">
+                    <h2>Joints et crépissage</h2>
+                    <span>2 photos</span>
+                </div>
+                <div class="galerie">
+                    <img src="IMG/Joint2.jpg" alt="Joints et crépi" loading="lazy">
+                    <img src="IMG/Joint.jpg" alt="Joints et crépi" loading="lazy">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>© 2023 NAMR Maçonnerie - Tous droits réservés.</p>
+            <p>Site créé par <a href="https://nuno-moreira-ribeiro.github.io/" target="_blank">Nuno Moreira Ribeiro</a></p>
+        </div>
     </footer>
+
+    <div id="lightbox" role="dialog" aria-label="Photo agrandie">
+        <button class="lb-close" aria-label="Fermer">&times;</button>
+        <button class="lb-prev" aria-label="Photo précédente">&#8249;</button>
+        <img src="" alt="">
+        <button class="lb-next" aria-label="Photo suivante">&#8250;</button>
+    </div>
+
+    <button id="scrollToTopButton" aria-label="Retour en haut">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 20V4M5 11l7-7 7 7"/></svg>
+    </button>
 </body>
 
 </html>

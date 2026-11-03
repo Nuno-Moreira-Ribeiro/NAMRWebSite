@@ -4,207 +4,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NAMR Maçonnerie : murs en pierre, dalles de pierre naturelle, dalles béton, ouverture de murs porteurs, parpaing, joints et crépi.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/89356d230c.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/icon" href="IMG/icon.ico">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="arrowUp.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("img").attr("draggable", "false");
-        });
-    </script>
+    <script src="script.js" defer></script>
     <title>NAMR Maçonnerie - Accueil</title>
 </head>
-<header>
-    <div class="contact">
-        <a id="tel" href="tel:+33638568154">&#9743; 06 38 56 81 54&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-        <div id="email">
-            <p>&#9993;&nbsp</p>
-            <a href="mailto:nunoantonio25@hotmail.com">nunoantonio25@hotmail.com</a>
-        </div>
-    </div>
-
-</header>
-<nav>
-    <div class="left"></div>
-    <div class="center">
-        <a class="button" href="index.html">Accueil</a>
-        <a class="button" href="realisation.html">Nos réalisations</a>
-        <a class="button" href="contact.html">Contact</a>
-    </div>
-    <div class="right"></div>
-</nav>
 
 <body>
-    <button id="scrollToTopButton" class="fa-solid fa-up-long"></button>
-
-    <div class="presentation">
-        <p>Bienvenue chez NAMR, votre partenaire de confiance pour tous vos projets de maçonnerie.
-            Forts d'une
-            expertise solide dans le domaine de la construction et de la rénovation, nous sommes fiers de vous offrir
-            des services
-            de maçonnerie exceptionnels
-        </p>
-    </div>
-    <div class="imgText">
-        <div class="IMG"><img src="IMG/murPierre1.jpg" alt="Mur en pierre"></div>
-        <div class="Description">
-            <div class="titreText">
-                <h1>Construction/Reconstruction de murs en pierre</h1>
-            </div>
-            <div class="textComplet">
-                <p>Découvrez l'art ancestral de la maçonnerie, où chaque pierre est soigneusement choisie et chaque mur
-                    est une œuvre
-                    d'art. Notre expertise en reconstruction et construction de murs en pierre est au cœur de notre
-                    métier. Que vous
-                    souhaitiez restaurer un mur ancien avec un charme intemporel ou créer un nouveau mur en pierre
-                    robuste, nous sommes là
-                    pour donner vie à vos projets.</p>
-            </div>
-            <div>
-                <a class="buttonProject" href="realisation.html#MursPierre">Voir les réalisations</a>
-            </div>
+    <div class="topbar">
+        <div class="wrap">
+            <a href="tel:+33638568154">&#9743;&nbsp; 06 38 56 81 54</a>
+            <a href="mailto:nunoantonio25@hotmail.com">&#9993;&nbsp; nunoantonio25@hotmail.com</a>
         </div>
     </div>
 
-    <br>
-
-    <div class="TextImg">
-        <div class="IMG"><img src="IMG/PoseDePierre.jpg" alt="Dallage en Pierre Naturelle"></div>
-        <div class="Description">
-            <div class="titreText">
-                <h1>Pose de dalles de pierre naturelle</h1>
-            </div>
-            <div class="textComplet">
-                <p>La pose de dalles de pierre naturelle est un art qui allie savoir-faire, précision et esthétique.
-                    Chez NAMR, nous sommes fiers de notre expertise en matière de pose de dalles de pierre naturelle, un
-                    métier où
-                    chaque détail compte. La pose de dalles de pierre naturelle est un processus méticuleux. Chaque
-                    dalle est placée avec soin pour garantir un
-                    ajustement parfait, mettant en valeur la beauté naturelle de la pierre. La précision est notre
-                    maître-mot, que ce soit
-                    pour les dalles en marbre, en granit, en ardoise, ou tout autre type de pierre naturelle.</p>
-            </div>
-            <div>
-                <a class="buttonProject" href="realisation.html#DallesPierre">Voir les réalisations</a>
-            </div>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="logo" href="index.html"><strong>NAMR</strong><span>Maçonnerie</span></a>
+            <nav class="site-nav">
+                <a href="index.html" aria-current="page">Accueil</a>
+                <a href="realisation.html">Réalisations</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-    </div>
-    <br>
-    <div class="imgText">
-        <div class="IMG"><img src="IMG/dalle4.jpg" alt="Dalle"></div>
-        <div class="Description">
-            <div class="titreText">
-                <h1>Dalles en béton armé</h1>
-            </div>
-            <div class="textComplet">
-                <p>Le coulage de dalles en béton armé est une véritable alchimie de la construction. C'est le moment où
-                    l'art de la
-                    maçonnerie rencontre la science du béton pour créer des fondations solides, des planchers robustes
-                    et des surfaces
-                    durables.
-                    Chez NAMR, nous considérons le coulage de dalles en béton armé comme une étape
-                    cruciale dans la
-                    création d'une structure résistante et fonctionnelle. C'est ici que la transformation a lieu, où le
-                    béton est façonné
-                    pour devenir la fondation solide sur laquelle reposent vos projets.</p>
-            </div>
-            <div>
-                <a class="buttonProject" href="realisation.html#DallesBeton">Voir les réalisations</a>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="TextImg">
-        <div class="IMG"><img src="IMG/murPorteur3.jpg" alt="Ouverture sur mur porteur"></div>
-        <div class="Description">
-            <div class="titreText">
-                <h1>Ouverture sur Mur Porteur</h1>
-            </div>
-            <div class="textComplet">
-                <p>L'ouverture sur mur porteur est une intervention qui transforme radicalement l'aménagement intérieur
-                    d'un espace. Elle
-                    permet de repousser les limites, d'ajouter de l'espace et de la luminosité à votre environnement,
-                    tout en maintenant la
-                    solidité de votre structure.
+    </header>
 
-                    Chez NAMR, nous sommes spécialisés dans la création d'ouvertures sur des murs porteurs, une
-                    opération
-                    qui requiert expertise et précision. Que vous souhaitiez ouvrir une fenêtre, une porte-fenêtre, ou
-                    même créer une baie
-                    vitrée spectaculaire, nous sommes là pour vous accompagner à chaque étape du processus.
+    <main>
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div class="hero-text">
+                    <span class="eyebrow">Construction &amp; rénovation</span>
+                    <h1>Pierre, béton, parpaing.<br>Du travail de maçon, bien fait.</h1>
+                    <p>Bienvenue chez NAMR, votre partenaire de confiance pour tous vos projets de maçonnerie. Forts
+                        d'une expertise solide dans le domaine de la construction et de la rénovation, nous sommes fiers
+                        de vous offrir des services de maçonnerie exceptionnels.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="contact.html">Demander un devis</a>
+                        <a class="btn btn-outline" href="realisation.html">Voir les chantiers</a>
+                    </div>
+                </div>
+                <figure class="hero-img">
+                    <img src="IMG/murPierre1.jpg" alt="Muret et pilier en pierre construits par NAMR">
+                </figure>
+            </div>
+        </section>
 
-                    L'ouverture sur mur porteur est bien plus qu'un simple travail de maçonnerie ; c'est l'art de
-                    redéfinir votre espace.
-                    Notre entreprise maîtrise compétences nécessaires pour identifier les points stratégiques de
-                    renforcement, assurant ainsi la sécurité et la stabilité de votre structure.</p>
-            </div>
-            <div>
-                <a class="buttonProject" href="realisation.html#OuvertureMurPorteur">Voir les réalisations</a>
-            </div>
-        </div>
-    </div>
-    <br>
-    <div class="imgText">
-        <div class="IMG"><img src="IMG/Par.jpg" alt="Pose de Parpaing "></div>
-        <div class="Description">
-            <div class="titreText">
-                <h1>Pose de Parpaing</h1>
-            </div>
-            <div class="textComplet">
-                <p>La pose de parpaing est l'une des techniques de maçonnerie les plus polyvalentes et les plus fiables
-                    pour la
-                    construction de murs, de cloisons, et de fondations solides. Les parpaings, avec leur robustesse
-                    inégalée, sont le choix
-                    idéal pour garantir la stabilité et la durabilité de vos projets.
+        <section class="services">
+            <div class="wrap">
+                <div class="section-head">
+                    <span class="eyebrow">Nos savoir-faire</span>
+                    <h2>Ce que nous réalisons</h2>
+                </div>
 
-                    Chez NAMR, nous sommes experts dans l'art de la pose de parpaing. Que vous planifiiez la
-                    construction d'un mur de clôture, d'une extension de maison, ou d'une fondation, nous avons
-                    l'expérience et l'expertise
-                    nécessaires pour garantir un travail de qualité.
+                <article class="service">
+                    <div class="service-img"><img src="IMG/murPierre3.jpg" alt="Mur en pierre" loading="lazy"></div>
+                    <div class="service-text">
+                        <span class="num">01</span>
+                        <h3>Construction et reconstruction de murs en pierre</h3>
+                        <p>Découvrez l'art ancestral de la maçonnerie, où chaque pierre est soigneusement choisie et
+                            chaque mur est une œuvre d'art. Notre expertise en reconstruction et construction de murs en
+                            pierre est au cœur de notre métier. Que vous souhaitiez restaurer un mur ancien avec un
+                            charme intemporel ou créer un nouveau mur en pierre robuste, nous sommes là pour donner vie
+                            à vos projets.</p>
+                        <a class="link-arrow" href="realisation.html#MursPierre">Voir les réalisations</a>
+                    </div>
+                </article>
 
-                    La polyvalence des parpaings signifie qu'ils peuvent être adaptés à une variété d'applications, à
-                    l'intérieur comme à
-                    l'extérieur.</p>
+                <article class="service">
+                    <div class="service-img"><img src="IMG/PoseDePierre.jpg" alt="Dallage en pierre naturelle" loading="lazy"></div>
+                    <div class="service-text">
+                        <span class="num">02</span>
+                        <h3>Pose de dalles de pierre naturelle</h3>
+                        <p>La pose de dalles de pierre naturelle est un art qui allie savoir-faire, précision et
+                            esthétique. Chaque dalle est placée avec soin pour garantir un ajustement parfait, mettant
+                            en valeur la beauté naturelle de la pierre. La précision est notre maître-mot, que ce soit
+                            pour les dalles en marbre, en granit, en ardoise, ou tout autre type de pierre naturelle.</p>
+                        <a class="link-arrow" href="realisation.html#DallesPierre">Voir les réalisations</a>
+                    </div>
+                </article>
+
+                <article class="service">
+                    <div class="service-img"><img src="IMG/dalle4.jpg" alt="Dalle en béton armé" loading="lazy"></div>
+                    <div class="service-text">
+                        <span class="num">03</span>
+                        <h3>Dalles en béton armé</h3>
+                        <p>Le coulage de dalles en béton armé est le moment où l'art de la maçonnerie rencontre la
+                            science du béton pour créer des fondations solides, des planchers robustes et des surfaces
+                            durables. Chez NAMR, nous le considérons comme une étape cruciale dans la création d'une
+                            structure résistante et fonctionnelle : la fondation sur laquelle reposent vos projets.</p>
+                        <a class="link-arrow" href="realisation.html#DallesBeton">Voir les réalisations</a>
+                    </div>
+                </article>
+
+                <article class="service">
+                    <div class="service-img"><img src="IMG/murPorteur3.jpg" alt="Ouverture sur mur porteur" loading="lazy"></div>
+                    <div class="service-text">
+                        <span class="num">04</span>
+                        <h3>Ouverture sur mur porteur</h3>
+                        <p>L'ouverture sur mur porteur transforme radicalement l'aménagement intérieur d'un espace :
+                            plus d'espace, plus de lumière, sans rien céder sur la solidité de la structure. Fenêtre,
+                            porte-fenêtre ou baie vitrée, nous identifions les points stratégiques de renforcement et
+                            vous accompagnons à chaque étape, pour la sécurité et la stabilité de votre maison.</p>
+                        <a class="link-arrow" href="realisation.html#OuvertureMurPorteur">Voir les réalisations</a>
+                    </div>
+                </article>
+
+                <article class="service">
+                    <div class="service-img"><img src="IMG/Par.jpg" alt="Pose de parpaing" loading="lazy"></div>
+                    <div class="service-text">
+                        <span class="num">05</span>
+                        <h3>Pose de parpaing</h3>
+                        <p>La pose de parpaing est l'une des techniques les plus polyvalentes et les plus fiables pour
+                            la construction de murs, de cloisons et de fondations. Mur de clôture, extension de maison
+                            ou fondation : nous avons l'expérience nécessaire pour garantir un travail de qualité, à
+                            l'intérieur comme à l'extérieur.</p>
+                        <a class="link-arrow" href="realisation.html#PoseParpaing">Voir les réalisations</a>
+                    </div>
+                </article>
+
+                <article class="service">
+                    <div class="service-img"><img src="IMG/Joint.jpg" alt="Joints et crépi" loading="lazy"></div>
+                    <div class="service-text">
+                        <span class="num">06</span>
+                        <h3>Joints et crépissage</h3>
+                        <p>Les joints et le crépissage sont les touches finales qui apportent une esthétique impeccable
+                            et une protection supplémentaire à vos surfaces. Nous réalisons un crépissage de qualité qui
+                            embellit vos murs tout en les protégeant de l'usure et de l'humidité.</p>
+                        <a class="link-arrow" href="realisation.html#JointsCreprissage">Voir les réalisations</a>
+                    </div>
+                </article>
             </div>
-            <div>
-                <a class="buttonProject" href="realisation.html#PoseParpaing">Voir les réalisations</a>
+        </section>
+
+        <section class="cta">
+            <div class="wrap cta-inner">
+                <h2>Un projet de maçonnerie ?</h2>
+                <div class="cta-actions">
+                    <a class="cta-tel" href="tel:+33638568154">06 38 56 81 54</a>
+                    <a class="btn btn-outline" href="contact.html">Écrire un message</a>
+                </div>
             </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>© 2023 NAMR Maçonnerie - Tous droits réservés.</p>
+            <p>Site créé par <a href="https://nuno-moreira-ribeiro.github.io/" target="_blank">Nuno Moreira Ribeiro</a></p>
         </div>
-    </div>
-    <br>
-    <div class="TextImg">
-        <div class="IMG"><img src="IMG/Joint.jpg" alt="Joint/Crépie"></div>
-        <div class="Description">
-            <div class="titreText">
-                <h1>Joints et Crépissage</h1>
-            </div>
-            <div class="textComplet">
-                <p>Les joints et le crépissage sont les touches finales qui apportent une esthétique impeccable et une
-                    protection
-                    supplémentaire à vos surfaces. Chez NAMR, nous sommes fiers de notre expertise dans l'art du
-                    jointoiement et du crépissage, garantissant ainsi que chaque projet atteint un niveau de finition
-                    exceptionnel.
-                    Chez NAMR, nous sommes en mesure de réaliser un crépissage de haute qualité qui non seulement
-                    embellira
-                    vos murs, mais également les protègera de l'usure, de l'humidité.</p>
-            </div>
-            <div>
-                <a class="buttonProject" href="realisation.html#JointsCreprissage">Voir les réalisations</a>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <p>Créé par <a class="linkHover" href="https://nuno-moreira-ribeiro.github.io/" target="_blank">Nuno
-                Moreira Ribeiro</a>
-            © Copyright 2023 - Tous droits réservés.
-        </p>
     </footer>
+
+    <button id="scrollToTopButton" aria-label="Retour en haut">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 20V4M5 11l7-7 7 7"/></svg>
+    </button>
 </body>
 
 </html>

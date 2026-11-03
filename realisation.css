@@ -1,107 +1,196 @@
-body {
-    overflow-x: hidden;
+.page-head {
+    padding: 56px 0 40px;
 }
 
-.separateur {
-    height: .3em;
-    background-color: black;
-    width: 98vw;
-    border-radius: 20px;
+.page-head h1 {
+    font-size: clamp(44px, 6vw, 72px);
+    margin-bottom: 14px;
 }
 
-.IMG {
+.page-head p {
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin: 0;
+}
+
+/* Raccourcis vers les catégories */
+.filtres {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+    position: sticky;
+    top: 76px;
+    z-index: 40;
+}
+
+.filtres .wrap {
     display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: row;
-    width: 100vw;
-    padding-left: 1%;
-    flex-wrap: wrap;
+    gap: 8px;
+    overflow-x: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    scrollbar-width: none;
 }
 
-.IMG img {
-    margin: 0.5%;
-    height: 40vh;
-}
-
-.type {
-    margin-left: 1%;
-    margin-bottom: 0;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-#scrollToTopButton {
+.filtres .wrap::-webkit-scrollbar {
     display: none;
+}
+
+.filtres a {
+    flex-shrink: 0;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border: 1px solid var(--line);
+    background: #fff;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.filtres a:hover {
+    border-color: var(--ink);
+    background: var(--yellow);
+}
+
+/* Galeries */
+.categorie {
+    padding: 56px 0 8px;
+    scroll-margin-top: 150px;
+}
+
+.cat-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--ink);
+}
+
+.cat-head h2 {
+    font-size: clamp(24px, 2.8vw, 34px);
+}
+
+.cat-head span {
+    flex-shrink: 0;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.galerie img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    cursor: zoom-in;
+    transition: filter 0.25s;
+}
+
+.galerie img:hover {
+    filter: brightness(0.85);
+}
+
+main {
+    padding-bottom: 80px;
+}
+
+/* Visionneuse */
+#lightbox {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    background-color: rgba(223, 223, 0, 0.711);
-    color: #fff;
+    inset: 0;
+    background: rgba(20, 19, 17, 0.94);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    padding: 40px 72px;
+}
+
+#lightbox.open {
+    display: flex;
+}
+
+#lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#lightbox button {
+    position: absolute;
+    background: none;
     border: none;
-    border-radius: 100px;
+    color: #e8e3d7;
+    font-size: 48px;
+    line-height: 1;
     cursor: pointer;
-    width: 2.5em;
-    height: 2.5em;
-
+    padding: 8px 14px;
 }
 
-#scrollToTopButton:hover {
-    background-color: rgba(223, 223, 0);
+#lightbox button:hover {
+    color: var(--yellow);
 }
 
-.click-to-zoom {
-    cursor: pointer;
-    transition: scale 0.3s ease-in-out;
+.lb-close {
+    top: 10px;
+    right: 14px;
 }
 
-.IMG img {
-    margin: 0.5%;
-    height: 40vh;
-    transition: scale 0.3s ease-in-out;
+.lb-prev {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.IMG:hover img {
-    opacity: 0.5;
+.lb-next {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.IMG img:hover {
-    opacity: 1;
-    z-index: 1000;
-    scale: 1.3;
-    transition: scale 0.3s ease-in-out;
-}
-
-@media screen and (max-width: 600px) {
-
-    .IMG:hover img {
-        opacity: unset;
-    }
-
-    .IMG img:hover {
-        opacity: unset;
-        z-index: unset;
-        scale: unset;
-        transition: none;
-    }
-
-    .IMG {
-        padding: 0%;
-    }
-
-    .type {
-        font-size: 1.4rem;
+@media screen and (max-width: 900px) {
+    .galerie {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 450px) {
-    .IMG img {
-        height: 70vw;
+@media screen and (max-width: 760px) {
+    .filtres {
+        position: static;
     }
 
-    .type {
-        font-size: 1.3rem;
+    .categorie {
+        scroll-margin-top: 0;
     }
 
+    #lightbox {
+        padding: 56px 12px;
+    }
+
+    .lb-prev,
+    .lb-next {
+        top: auto !important;
+        bottom: 6px;
+        transform: none !important;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .page-head {
+        padding: 36px 0 28px;
+    }
+
+    .galerie {
+        grid-template-columns: 1fr;
+    }
+
+    .cat-head {
+        flex-direction: column;
+        gap: 4px;
+    }
 }

@@ -4,84 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez NAMR Maçonnerie pour un devis ou une question sur votre projet.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="icon" type="image/icon" href="IMG/icon.ico">
-
+    <script src="script.js" defer></script>
     <title>NAMR Maçonnerie - Contact</title>
 </head>
-<header>
-    <div class="contact">
-        <a id="tel" href="tel:+33638568154">&#9743 06 38 56 81 54&nbsp&nbsp&nbsp&nbsp&nbsp</a>
-        <div id="email">
-            <p>&#9993&nbsp</p>
-            <a href="mailto:nunoantonio25@hotmail.com">nunoantonio25@hotmail.com</a>
+
+<body>
+    <div class="topbar">
+        <div class="wrap">
+            <a href="tel:+33638568154">&#9743;&nbsp; 06 38 56 81 54</a>
+            <a href="mailto:nunoantonio25@hotmail.com">&#9993;&nbsp; nunoantonio25@hotmail.com</a>
         </div>
     </div>
 
-</header>
-<nav>
-    <div class="left"></div>
-    <div class="center">
-        <a class="button" href="index.html">Accueil</a>
-        <a class="button" href="realisation.html">Nos réalisations</a>
-        <a class="button" href="contact.html">Contact</a>
-    </div>
-    <div class="right"></div>
-</nav>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="logo" href="index.html"><strong>NAMR</strong><span>Maçonnerie</span></a>
+            <nav class="site-nav">
+                <a href="index.html">Accueil</a>
+                <a href="realisation.html">Réalisations</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<body>
+    <main class="wrap contact-grid">
+        <aside class="infos">
+            <span class="eyebrow">Contact</span>
+            <h1>Parlons de votre projet</h1>
+            <p>Pour toute demande d'information, devis personnalisé ou pour discuter de votre projet de maçonnerie,
+                n'hésitez pas à nous contacter. Nous sommes à votre disposition pour répondre à toutes vos questions.</p>
 
-    <div class="container">
-        <form action="https://formspree.io/f/xvojlnlq" method="POST">
-            <h1>Contactez-nous</h1>
-            <p id="explication">Pour toute demande d'information, devis personnalisé ou pour discuter de votre projet de
-                maçonnerie,
-                n'hésitez pas à
-                nous contacter en remplissant le formulaire ci-dessous. Nous sommes à votre disposition pour répondre à
-                toutes vos
-                questions et besoins en matière de maçonnerie.</p>
-            <div class="corps">
-                <div class="gauche">
-                    <div class="Text">
-                        <label>Nom <span class="required">(*)</span></label>
-                        <input type="text" name="Nom" id="Nom" placeholder="Martin" required>
-                    </div>
-                    <div class="Text">
-                        <label>Adresse e-mail <span class="required">(*)</span></label>
-                        <input type="email" name="email" id="mail" placeholder="monadresse@mail.com" required>
-                    </div>
-                    <div class="Text">
-                        <label>Téléphone <span class="required">(*)</span></label>
-                        <input type="tel" name="telephone" id="telephone" placeholder="06 06 06 06 06" required>
-                    </div>
+            <dl>
+                <dt>Téléphone</dt>
+                <dd><a href="tel:+33638568154">06 38 56 81 54</a></dd>
+                <dt>E-mail</dt>
+                <dd><a href="mailto:nunoantonio25@hotmail.com">nunoantonio25@hotmail.com</a></dd>
+            </dl>
+        </aside>
 
-                    <div class="Text">
-                        <label>Message <span class="required">(*)</span></label>
-                        <textarea name="message" id="message" placeholder="Votre message ..." required></textarea>
-                    </div>
-                </div>
+        <form class="formulaire" action="https://formspree.io/f/xvojlnlq" method="POST">
+            <div class="champs-ligne">
+                <label>
+                    <span>Nom <em>*</em></span>
+                    <input type="text" name="Nom" id="Nom" placeholder="Martin" required>
+                </label>
+                <label>
+                    <span>Téléphone <em>*</em></span>
+                    <input type="tel" name="telephone" id="telephone" placeholder="06 06 06 06 06" required>
+                </label>
             </div>
-            <div id="avertissement">
-                <p>Les champs comportants une * sont obligatoires.</p>
-            </div>
-            <div class="pied-formulaire">
-                <button>Envoyer votre message</button>
+            <label>
+                <span>Adresse e-mail <em>*</em></span>
+                <input type="email" name="email" id="mail" placeholder="monadresse@mail.com" required>
+            </label>
+            <label>
+                <span>Message <em>*</em></span>
+                <textarea name="message" id="message" rows="7" placeholder="Décrivez votre projet : type de travaux, surface, lieu..." required></textarea>
+            </label>
+            <div class="form-pied">
+                <p>Les champs marqués d'un * sont obligatoires.</p>
+                <button class="btn btn-primary" type="submit">Envoyer le message</button>
             </div>
         </form>
-    </div>
+    </main>
 
-    <footer>
-        <p>Créé par <a class="linkHover" href="https://nuno-moreira-ribeiro.github.io/" target="_blank">Nuno
-                Moreira Ribeiro</a>
-            © Copyright 2023 - Tous droits réservés.
-        </p>
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>© 2023 NAMR Maçonnerie - Tous droits réservés.</p>
+            <p>Site créé par <a href="https://nuno-moreira-ribeiro.github.io/" target="_blank">Nuno Moreira Ribeiro</a></p>
+        </div>
     </footer>
 </body>
-
-
 
 </html>
